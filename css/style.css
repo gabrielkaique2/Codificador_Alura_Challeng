@@ -1,0 +1,121 @@
+header{
+    background: #4db2b9;
+    padding: 10px 0px;
+}
+
+#site_name{
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+#contato{
+    margin: 10px 0;
+    padding: 15px 20px;    
+    position: absolute;
+    top: 0px;
+    right: 0px;  
+}
+
+#contato li{
+    display: inline;
+    padding: 8px;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 1s color;
+    background: #000000;
+    border-radius: 0 10px 0 10px ;
+    padding: 10px 10px;
+}
+
+nav a:hover{
+    color: #fe0557 ;
+}
+
+main{
+    background: #ffffff;
+    padding: 50px 10px;
+}
+
+#conteudo{
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#conteudo h2{
+    font-size: 25px;
+}
+
+#conteudo p{
+    font-size: 19px;
+    padding-top: 20px;
+
+}
+
+.caixaEntrada, .caixaSaida{
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixaAmarela{
+    margin: 20px 20px;
+    font-size: 20px;
+    padding: 20px 20px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: #efeecc;
+    border: none;
+    border-radius: 5px;
+}
+
+.conjuntoArea{
+    text-align: center;
+    position: relative;
+}
+
+label{
+    text-align: center;
+    font-size: 25px;
+}
+
+button{
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #4db2b9;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+button:hover{
+    background: #fe0557 ;
+}
+
+button:active{
+    background: #fe8b05;
+}
+
+.botao{
+    text-align: center;
+}
+
+footer{
+    background-color: #4db2b9;
+    text-align: center;
+    padding: 20px;
+}
