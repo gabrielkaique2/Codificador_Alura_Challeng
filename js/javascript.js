@@ -1,6 +1,6 @@
-    var input = document.querySelector('#areaTexto');
+    const input = document.querySelector('#areaTexto');
+    var output = document.querySelector('#areaTextoSaida');
     var cripButton = document.querySelector('#criptografar');
-    var sub_input = input;
     var t1 = '';
     var t2 = '';
     var t3 = '';
@@ -16,13 +16,20 @@
 
     function substituirCaracteres(){
 
-        t1 = sub_input.replace('e','enter');
-        t2 = t1.replace('i','imes');
-        t3 = t2.replace('a','ai');
-        t4 = t3.replace('o','ober');
-        t5 = t4.replace('u','ufat');
+        t1 = input.value.replaceAll('e','enter');
+        t2 = t1.replaceAll('i','imes');
+        t3 = t2.replaceAll('a','ai');
+        t4 = t3.replaceAll('o','ober');
+        t5 = t4.replaceAll('u','ufat');
 
-        return t5;
+        var result = t5;    
+        return output.textContent = result;
+        
     }
 
-    cripButton.onClick = substituirCaracteres;
+    /*
+    function sendString(){
+
+    }
+*/
+    cripButton.addEventListener('click',substituirCaracteres);
