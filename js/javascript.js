@@ -1,6 +1,7 @@
     const input = document.querySelector('#areaTexto');
     var output = document.querySelector('#areaTextoSaida');
     var cripButton = document.querySelector('#criptografar');
+    var decripButton = document.querySelector('#descriptografar');
     var t1 = '';
     var t2 = '';
     var t3 = '';
@@ -27,9 +28,15 @@
         
     }
 
-    /*
-    function sendString(){
-
+    function decriptar(){
+        t1 = input.value.replaceAll('enter','e');
+        t2 = t1.replaceAll('imes','i');
+        t3 = t2.replaceAll('ai','a');
+        t4 = t3.replaceAll('ober','o');
+        t5 = t4.replaceAll('ufat','u');
+        var resultD = t5;
+        return output.textContent = resultD;
     }
-*/
+
     cripButton.addEventListener('click',substituirCaracteres);
+    decripButton.addEventListener('click',decriptar);
