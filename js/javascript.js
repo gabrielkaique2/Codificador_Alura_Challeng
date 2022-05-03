@@ -2,6 +2,7 @@
     var output = document.querySelector('#areaTextoSaida');
     var cripButton = document.querySelector('#criptografar');
     var decripButton = document.querySelector('#descriptografar');
+    var copyButton= document.querySelector('#copiar');
     var t1 = '';
     var t2 = '';
     var t3 = '';
@@ -31,5 +32,12 @@
         return output.textContent = resultD;
     }
 
+    function copy() {
+        var copyText = document.querySelector("#areaTextoSaida");
+        copyText.select();
+        document.execCommand("copy");
+      }
+
     cripButton.addEventListener('click',substituirCaracteres);
     decripButton.addEventListener('click',decriptar);
+    copyButton.addEventListener("click", copy);

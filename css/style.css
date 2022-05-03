@@ -3,6 +3,10 @@ header{
     padding: 10px 0px;
 }
 
+#site_logo{
+    width: 100%;
+}
+
 #site_name{
     text-align: center;
     font-size: 50px;
@@ -44,7 +48,8 @@ nav a:hover{
 
 main{
     background: #ffffff;
-        padding: 1em 1em;
+    padding: 1em 1em;
+    width: auto;
 }
 
 .conteudo{
