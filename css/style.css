@@ -44,13 +44,14 @@ nav a:hover{
 
 main{
     background: #ffffff;
-        padding: 50px 10px;
+        padding: 1em 1em;
 }
 
 .conteudo{
     width: 30%;
     height: 1000%;
     text-align: justify;
+    display: inline-block;
 }
 
 .conteudo-titulo{
@@ -63,11 +64,19 @@ main{
     padding-top: 1em;
 }
 
-.conjuntoArea{
-    display: block;
+label{
     text-align: center;
-    position: relative;
-    vertical-align: top;
+    font-size: 25px;
+}
+
+
+.conjuntoArea{
+    text-align: right;
+    display: inline-block;
+    width: auto;
+    /*vertical-align: top;*/
+    margin-left: 100px;
+    padding-top: 1em;
 }
 
 .caixaEntrada, .caixaSaida{
@@ -75,7 +84,7 @@ main{
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-
+    /*vertical-align: top;*/
 }
 
 .caixaAmarela{
@@ -83,19 +92,21 @@ main{
     font-size: 20px;
     padding: 20px 20px;
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 600px;
     background: #efeecc;
     border: none;
     border-radius: 5px;
 }
 
-label{
-    text-align: center;
-    font-size: 25px;
+/*Aqui começa a estilização do botão*/
+
+.container{
+    display: inline-block;
+    margin-left: 1000px;
 }
 
-button{
+.botoes{
     display: inline-block;
     margin: 20px 20px;
     padding: 10px 15px;
@@ -112,10 +123,6 @@ button:hover{
 
 button:active{
     background: #fe8b05;
-}
-
-.botao{
-    text-align: center;
 }
 
 /*Separação de corpo principal e rodapé*/
