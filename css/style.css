@@ -54,7 +54,7 @@ main{
 
 .conteudo{
     width: 30%;
-    height: 1000%;
+    height: 100%;
     text-align: justify;
     display: inline-block;
 }
@@ -136,4 +136,67 @@ footer{
     background-color: #4db2b9;
     text-align: center;
     padding: 20px;
+}
+
+@media screen and (max-width: 1860px){
+    .caixaAmarela{
+        width: 350px;
+    }
+    .container{
+        display: inline-block;
+        margin-left: 800px;
+    }
+    .conjuntoArea{
+        vertical-align: bottom;
+    }
+    
+}
+
+@media screen and (max-width: 1431px){
+    .caixaAmarela{
+        width: 300px;
+    }
+    .container{
+        display: inline-block;
+        margin-left: 700px;
+    }
+    .conjuntoArea{
+        vertical-align: bottom;
+    }
+    
+}
+
+@media screen and (max-width: 1289px){
+    .caixaAmarela{
+        width: 250px;
+    }
+    .container{
+        display: block;
+        margin-left: 600px;
+    }
+    .conjuntoArea{
+        vertical-align: bottom;
+    }
+    
+}
+
+@media screen and (max-width: 1146px){
+    .conteudo{
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+        display: inline-block;
+    }
+    .caixaAmarela{
+        width: 300px;
+        height: 300px;
+    }
+    .container{
+        display: inline;
+        margin-left: 25%;
+    }
+    .conjuntoArea{
+        vertical-align: bottom;
+    }
+    
 }
